@@ -1,12 +1,5 @@
-import Project from './pages/Project';
+import Project from './Projects/Project';
 
-function ProjectContainer(props) {
-  const { name, github, link } = props;
-  return (
-    <div className="container">
-      <Project name={name} github={github} link={link} />
-    </div>
-  );
-}
+function ProjectContainer() {}
 
 export default ProjectContainer;
