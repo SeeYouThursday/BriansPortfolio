@@ -7,7 +7,7 @@
   },
   {
     "name": "Choose Your Own Adventure",
-    "github": "",
+    "github": "https://github.com/SeeYouThursday/Choose-Your-Own-Adventure",
     "url": "https://createyourownadventure-5cf1f78476c3.herokuapp.com/",
     "description": "This is a choose your own adventure game. The user is presented with a scenario and two choices. The user then selects one of the two choices and is presented with another scenario and two more choices. This continues until the user reaches the end of the game. The user can then choose to play again or exit the game. This project was a great learning experience. We learned how to work with a team and how to use git to collaborate on a project. We also learned how to use the express framework to create a web application.",
     "image": "placeholder.png"

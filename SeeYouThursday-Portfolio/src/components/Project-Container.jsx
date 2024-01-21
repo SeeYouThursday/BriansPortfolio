@@ -1,5 +1,11 @@
 import Project from './Projects/Project';
 
-function ProjectContainer() {}
+function ProjectContainer() {
+  return (
+    <>
+      <Project />
+    </>
+  );
+}
 
 export default ProjectContainer;
