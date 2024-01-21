@@ -1,9 +1,36 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import projectList from '../../assets/project-list.json';
+function Project() {
+  const projects = projectList;
 
-function Project({ github, url, img }) {
+  const projectsAsCom = projects.map((project, idx) => (
+    <>
+      <Card.Img variant="top" src={project.img} />
+      <Card.Body>
+        <Card.Title>{project.name}</Card.Title>
+        <Card.Text>{project.description}</Card.Text>
+      </Card.Body>
+      <Button href={project.url} variant="primary"></Button>
+    </>
+  ));
+
   return (
-    <Card>
+    <Row xs={1} md={2} className="g-4">
+      {Array.from({ length: 4 }).map((_, idx) => (
+        <Col key={idx}>
+          <Card>{projectsAsCom}</Card>
+        </Col>
+      ))}
+    </Row>
+  );
+}
+
+export default Project;
+{
+  /* <Card>
       <Card.Img
         variant="top"
         src="./assets/images/GitFitNotFat-ScreenshotCrop.png"
@@ -16,13 +43,9 @@ function Project({ github, url, img }) {
         exercising.
       </Card.Body>
       <Button variant="primary">Application</Button>
-      <Button>Github Repo</Button>
-    </Card>
-  );
+      <Button variant="primary">Github Repo</Button>
+    </Card> */
 }
-
-export default Project;
-
 {
   /* <div className="container">
       <h3>{name}</h3>
