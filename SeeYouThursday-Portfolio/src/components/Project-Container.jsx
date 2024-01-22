@@ -1,9 +1,10 @@
 import Project from './Projects/Project';
+import projectList from '../assets/project-list';
 
 function ProjectContainer() {
   return (
     <>
-      <Project />
+      <Project projects={projectList} />
     </>
   );
 }

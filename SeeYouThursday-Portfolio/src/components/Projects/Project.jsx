@@ -2,31 +2,32 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import projectList from '../../assets/project-list.json';
-function Project() {
-  const projects = projectList;
+import PropTypes from 'prop-types';
 
-  const projectsAsCom = projects.map((project, idx) => (
-    <>
-      <Card.Img variant="top" src={project.img} />
-      <Card.Body>
-        <Card.Title>{project.name}</Card.Title>
-        <Card.Text>{project.description}</Card.Text>
-      </Card.Body>
-      <Button href={project.url} variant="primary"></Button>
-    </>
-  ));
-
+function Project({ projects }) {
   return (
     <Row xs={1} md={2} className="g-4">
-      {Array.from({ length: 4 }).map((_, idx) => (
+      {projects.map((project, idx) => (
         <Col key={idx}>
-          <Card>{projectsAsCom}</Card>
+          <Card className="h-100">
+            <Card.Img variant="top" src={project.img} />
+            <Card.Body className="d-flex flex-column">
+              <Card.Title>{project.name}</Card.Title>
+              <Card.Text className="mb-auto">{project.description}</Card.Text>
+              <Button href={project.url} variant="primary" className="mt-auto">
+                Go to Project
+              </Button>
+            </Card.Body>
+          </Card>
         </Col>
       ))}
     </Row>
   );
 }
+
+Project.propTypes = {
+  projects: PropTypes.array.isRequired,
+};
 
 export default Project;
 {
