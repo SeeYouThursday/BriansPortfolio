@@ -7,15 +7,15 @@ import logo from '../assets/images/seeyouthursday.png';
 function Header() {
   return (
     <Navbar
-      fixed="top"
       collapseOnSelect
       expand="lg"
       className="bg-body-tertiary"
       bg="dark"
       data-bs-theme="dark"
-    //   style={
-    //     background-image: 
-    //   }
+
+      //   style={
+      //     background-image:
+      //   }
     >
       <Container>
         <Navbar.Brand href="#home">
