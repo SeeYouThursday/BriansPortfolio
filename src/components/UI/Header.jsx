@@ -1,8 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import logo from '../assets/images/seeyouthursday.png';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from '../../assets/images/seeyouthursday.png';
 
 function Header() {
   return (
@@ -12,10 +12,6 @@ function Header() {
       className="bg-body-tertiary"
       bg="dark"
       data-bs-theme="dark"
-
-      //   style={
-      //     background-image:
-      //   }
     >
       <Container>
         <Navbar.Brand href="#home">
@@ -31,9 +27,11 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
+            <Nav.Link href="/About">About Me</Nav.Link>
+            <Nav.Link href="/Portfolio">Portfolio</Nav.Link>
+            <Nav.Link href="/Contact">Contact Me</Nav.Link>
+            <Nav.Link href="/Resume">Resume</Nav.Link>
+            {/* <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -43,13 +41,7 @@ function Header() {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-          <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
