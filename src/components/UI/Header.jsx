@@ -14,7 +14,7 @@ function Header() {
       data-bs-theme="dark"
     >
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/" id="navbar">
           <img
             alt="SeeYouThursday GitHub Logo"
             src={logo}
@@ -22,8 +22,8 @@ function Header() {
             height="30"
             className="d-inline-block align-top"
           />{' '}
-          SeeYouThursday
         </Navbar.Brand>
+        <h1 style={{ color: '#ffffff' }}>Brian Galyen</h1>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

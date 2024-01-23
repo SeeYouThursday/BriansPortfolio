@@ -1,6 +1,8 @@
 @import '../node_modules/normalize.css/normalize.css';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 /* 
+
+className="flex-column justify-flex-start min-100-vh"
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
