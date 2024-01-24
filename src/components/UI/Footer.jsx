@@ -7,10 +7,10 @@ import { MDBFooter, MDBContainer, MDBIcon, MDBBtn } from 'mdb-react-ui-kit';
 
 export default function Footer() {
   return (
-    <MDBFooter className="bg-light text-center text-white d-flex">
+    <MDBFooter className="text-center d-flex">
       <MDBContainer className="p-4 pb-0">
         <section className="mb-4">
-          <MDBBtn
+          {/* <MDBBtn
             floating
             className="m-1"
             style={{ backgroundColor: '#3b5998' }}
@@ -18,7 +18,7 @@ export default function Footer() {
             role="button"
           >
             <MDBIcon fab icon="facebook-f" />
-          </MDBBtn>
+          </MDBBtn> */}
 
           {/* <MDBBtn
             floating
@@ -42,18 +42,18 @@ export default function Footer() {
           <MDBBtn
             floating
             className="m-1"
-            style={{ backgroundColor: '#ac2bac' }}
-            href="#!"
+            style={{ backgroundColor: '' }} //?? Consider changing bkground color
+            href="https://stackoverflow.com/users/23294481/seeyouthursday"
             role="button"
           >
-            <MDBIcon fab icon="instagram" />
+            <MDBIcon fab icon="stack-overflow" />
           </MDBBtn>
 
           <MDBBtn
             floating
             className="m-1"
             style={{ backgroundColor: '#0082ca' }}
-            href="#!"
+            href="https://www.linkedin.com/in/brian-galyen-85aa06aa/"
             role="button"
           >
             <MDBIcon fab icon="linkedin-in" />
@@ -63,7 +63,7 @@ export default function Footer() {
             floating
             className="m-1"
             style={{ backgroundColor: '#333333' }}
-            href="#!"
+            href="https://github.com/SeeYouThursday"
             role="button"
           >
             <MDBIcon fab icon="github" />

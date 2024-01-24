@@ -23,6 +23,7 @@ function ContactMe() {
     }
   };
 
+  //?? Consider adding setErrorMessage instead of Bootstrap validation
   const handleSubmit = (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
@@ -43,6 +44,7 @@ function ContactMe() {
             <Form.Group className="mb-3" controlId="formEnterName">
               <Form.Label>Name:</Form.Label>
               <Form.Control
+                value={name}
                 required
                 type="text"
                 placeholder="Enter Name"
@@ -57,6 +59,7 @@ function ContactMe() {
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 required
+                value={email}
                 type="email"
                 placeholder="Enter email"
                 onChange={(validateEmail, handleInputChange)}
@@ -69,6 +72,7 @@ function ContactMe() {
             <Form.Group>
               <Form.Label>Message:</Form.Label>
               <Form.Control
+                value={message}
                 required
                 as={'textarea'}
                 onChange={handleInputChange}
