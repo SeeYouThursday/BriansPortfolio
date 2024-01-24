@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 import Header from './components/ui/Header';
 import Footer from './components/ui/Footer';
 // import Background from './components/ui/Background';
-// import './App.css';
+import './assets/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -12,7 +12,9 @@ function App() {
     <div className="d-flex flex-column">
       {/* <Background /> */}
       <Header />
-      <Outlet />
+      <main id="coverImage">
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );

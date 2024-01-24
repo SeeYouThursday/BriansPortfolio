@@ -1,7 +1,19 @@
-@import '../node_modules/normalize.css/normalize.css';
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-/* 
+/* @import '../node_modules/normalize.css/normalize.css'; */
+/* @import '../node_modules/bootstrap/scss/bootstrap.scss'; */
+@import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
 
+main {
+  /* background-image: url('../images/gerson-repreza-large.jpg'); */
+  /* background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-attachment: fixed; */
+  min-height: 100vh;
+  display: flex;
+}
+
+/* 
 className="flex-column justify-flex-start min-100-vh"
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

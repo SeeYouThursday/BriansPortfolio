@@ -1,4 +1,4 @@
-import Project from '../Projects/Project';
+import Project from '../pages/Project';
 import projectList from '../../assets/project-list';
 
 function ProjectContainer() {
