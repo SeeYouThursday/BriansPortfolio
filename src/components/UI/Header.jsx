@@ -29,12 +29,8 @@ function Header() {
         <h1 style={{ color: '#ffffff' }}>Brian Galyen</h1>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav
-            variant="underline"
-            defaultActiveKey="/About"
-            className="me-auto"
-          >
-            <Nav.Link as={Link} to="/About" eventKey="/About">
+          <Nav variant="underline" defaultActiveKey="/" className="me-auto">
+            <Nav.Link as={Link} to="/" eventKey="/">
               About Me
             </Nav.Link>
             {/* May map over an array*/}
