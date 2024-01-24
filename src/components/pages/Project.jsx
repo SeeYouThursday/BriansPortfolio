@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/esm/Container';
 function Project({ projects }) {
   return (
-    <Container>
+    <Container className="mb-4">
       <Row xs={1} md={2} className="g-4">
         {projects.map((project, idx) => (
           <Col key={idx}>

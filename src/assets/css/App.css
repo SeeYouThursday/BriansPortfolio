@@ -9,8 +9,11 @@ main {
   background-size: auto;
   background-position: center;
   background-attachment: fixed; */
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+  margin: 0;
 }
 
 /* 

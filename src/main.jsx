@@ -6,7 +6,7 @@ import Error from './components/pages/Error.jsx';
 import Portfolio from './components/ui/Portfolio.jsx';
 import Contact from './components/pages/Contact.jsx';
 import About from './components/pages/About.jsx';
-import Home from './components/pages/Home.jsx';
+// import Home from './components/pages/Home.jsx';
 import Resume from './components/pages/Resume.jsx';
 import './assets/css/index.css';
 

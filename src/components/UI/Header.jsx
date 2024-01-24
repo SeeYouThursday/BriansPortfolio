@@ -10,7 +10,7 @@ function Header() {
     <Navbar
       collapseOnSelect
       expand="lg"
-      className="bg-body-tertiary"
+      className="bg-body-tertiary mb-4"
       // fixed="top"
       bg="dark"
       data-bs-theme="dark"
