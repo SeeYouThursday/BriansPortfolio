@@ -7,7 +7,7 @@ import { MDBFooter, MDBContainer, MDBIcon, MDBBtn } from 'mdb-react-ui-kit';
 
 export default function Footer() {
   return (
-    <MDBFooter className="bg-light text-center text-white">
+    <MDBFooter className="bg-light text-center text-white d-flex">
       <MDBContainer className="p-4 pb-0">
         <section className="mb-4">
           <MDBBtn
@@ -70,16 +70,6 @@ export default function Footer() {
           </MDBBtn>
         </section>
       </MDBContainer>
-
-      <div
-        className="text-center p-3"
-        style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
-      >
-        © 2020 Copyright:
-        <a className="text-white" href="https://mdbootstrap.com/">
-          MDBootstrap.com
-        </a>
-      </div>
     </MDBFooter>
   );
 }

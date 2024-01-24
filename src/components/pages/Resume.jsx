@@ -1,8 +1,7 @@
 import { Button } from 'react-bootstrap';
 import DevProf from './DevProf';
-
+import ResumeDoc from '../../assets/BRIANGALYENRESUME2024.pdf';
 function Resume() {
-  //!upload to Google Drive and replace Button href
   //List of Proficencies
   const proficencies = [
     'Agile Development',
@@ -20,7 +19,9 @@ function Resume() {
       className="d-flex flex-column"
     >
       <DevProf proficencies={proficencies} />
-      <Button href="">Download Brian Galyen&apos;s Resume</Button>
+      <Button href={ResumeDoc} download>
+        Download Brian Galyen&apos;s Resume
+      </Button>
     </div>
   );
 }
