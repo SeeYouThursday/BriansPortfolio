@@ -1,8 +1,9 @@
 // import { useState } from 'react';
-import { Outlet } from 'react-router-dom';
+
 import Footer from './components/ui/Footer.jsx';
 import Header from './components/ui/Header.jsx';
 // import Background from './components/ui/Background';
+import { Outlet } from 'react-router-dom';
 import './assets/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
