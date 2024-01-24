@@ -1,4 +1,4 @@
-import Project from '../pages/Project';
+import Project from './Project';
 import projectList from '../../assets/project-list';
 
 function Portfolio() {
