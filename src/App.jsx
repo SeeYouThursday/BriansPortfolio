@@ -1,5 +1,3 @@
-// import { useState } from 'react';
-
 import Footer from './components/ui/Footer.jsx';
 import Header from './components/ui/Header.jsx';
 // import Background from './components/ui/Background';
