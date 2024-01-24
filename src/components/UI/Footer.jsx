@@ -20,7 +20,7 @@ export default function Footer() {
             <MDBIcon fab icon="facebook-f" />
           </MDBBtn>
 
-          <MDBBtn
+          {/* <MDBBtn
             floating
             className="m-1"
             style={{ backgroundColor: '#55acee' }}
@@ -28,9 +28,9 @@ export default function Footer() {
             role="button"
           >
             <MDBIcon fab icon="twitter" />
-          </MDBBtn>
+          </MDBBtn> */}
 
-          <MDBBtn
+          {/* <MDBBtn
             floating
             className="m-1"
             style={{ backgroundColor: '#dd4b39' }}
@@ -38,7 +38,7 @@ export default function Footer() {
             role="button"
           >
             <MDBIcon fab icon="google" />
-          </MDBBtn>
+          </MDBBtn> */}
           <MDBBtn
             floating
             className="m-1"

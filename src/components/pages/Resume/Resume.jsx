@@ -1,6 +1,7 @@
 import { Button } from 'react-bootstrap';
 import DevProf from './DevProf';
-import ResumeDoc from '../../assets/BRIANGALYENRESUME2024.pdf';
+import ResumeDoc from '../../../assets/BRIANGALYENRESUME2024.pdf';
+
 function Resume() {
   //List of Proficencies
   const proficencies = [
