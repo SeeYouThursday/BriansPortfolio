@@ -1,7 +1,7 @@
 // import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import Header from './components/ui/Header.jsx';
 import Footer from './components/ui/Footer.jsx';
+import Header from './components/ui/Header.jsx';
 // import Background from './components/ui/Background';
 import './assets/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,7 +9,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="d-flex flex-column">
-      {/* <Background /> */}
       <Header />
       <main id="coverImage">
         <Outlet />
