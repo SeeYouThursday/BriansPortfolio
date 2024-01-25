@@ -1,34 +1,8 @@
-/* @import '../node_modules/normalize.css/normalize.css'; */
-/* @import '../node_modules/bootstrap/scss/bootstrap.scss'; */
 @import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
 main {
-  /* background-image: url('../images/gerson-repreza-large.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh; */
   display: flex;
   flex-direction: column;
-  /* overflow: hidden; */
   margin: 0;
 }
-
-/* 
-className="flex-column justify-flex-start min-100-vh"
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
