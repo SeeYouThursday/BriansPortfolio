@@ -3,8 +3,8 @@
 import './app.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Outlet } from 'react-router-dom';
-import Footer from './Footer.jsx';
-import Header from './Header.jsx';
+import Footer from './components/ui/Footer.jsx';
+import Header from './components/ui/Header.jsx';
 
 function App() {
   return (
