@@ -10,35 +10,6 @@ export default function Footer() {
     <MDBFooter className="text-center d-flex">
       <MDBContainer className="p-4 pb-0">
         <section className="mb-4">
-          {/* <MDBBtn
-            floating
-            className="m-1"
-            style={{ backgroundColor: '#3b5998' }}
-            href="#!"
-            role="button"
-          >
-            <MDBIcon fab icon="facebook-f" />
-          </MDBBtn> */}
-
-          {/* <MDBBtn
-            floating
-            className="m-1"
-            style={{ backgroundColor: '#55acee' }}
-            href="#!"
-            role="button"
-          >
-            <MDBIcon fab icon="twitter" />
-          </MDBBtn> */}
-
-          {/* <MDBBtn
-            floating
-            className="m-1"
-            style={{ backgroundColor: '#dd4b39' }}
-            href="#!"
-            role="button"
-          >
-            <MDBIcon fab icon="google" />
-          </MDBBtn> */}
           <MDBBtn
             floating
             className="m-1"

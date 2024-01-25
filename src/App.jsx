@@ -1,4 +1,4 @@
-import Footer from './components/ui/Footer.jsx';
+// import Footer from './components/ui/Footer.jsx';
 import Header from './components/ui/Header.jsx';
 // import Background from './components/ui/Background';
 import { Outlet } from 'react-router-dom';
@@ -12,7 +12,7 @@ function App() {
       <main id="coverImage">
         <Outlet />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

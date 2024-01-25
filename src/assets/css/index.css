@@ -1,3 +1,6 @@
+@import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
 body {
   background-image: url('../images/gerson-repreza-large.jpg');
   background-repeat: no-repeat;
