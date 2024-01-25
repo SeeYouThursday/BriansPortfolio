@@ -1,25 +1,39 @@
 import '../../assets/css/about.css';
-import selfie from '../../assets/images/selfimagesmaller1.jpg';
-import { Card, Container, Image } from 'react-bootstrap';
+import selfie from '../../assets/images/jesuswalk.png';
+import { Container, Image } from 'react-bootstrap';
+import MovingText from 'react-moving-text';
+
 function About() {
   return (
-    <Container className="d-flex flex-column parent">
-      <div>
-        <h2>About the Developer</h2>
+    <Container className=" parent">
+      <div className="" style={{ 'background-color': 'gray' }}>
+        <MovingText
+          type="flash"
+          duration="600ms"
+          delay="100ms"
+          iteration="2"
+          timing="ease-in"
+          direction="normal"
+          fillMode="none"
+          fluid
+        >
+          <h2 style={{ 'font-weight': 100, color: 'yellow' }}>
+            About the Developer
+          </h2>
+        </MovingText>
         <div className="selfie-wrapper">
           <Image
             height={'30%'}
             width={'30%'}
             src={selfie}
-            alt="picture of Brian in a suit"
-            roundedCircle
+            alt="selfie picture"
           />
         </div>
-        <Card.Text>
+        <p>
           As a recently retired educator, I have my calling to be a Full Stack
           Developer. My previous skills have effectively translated into the
           Agile Development environment.
-        </Card.Text>
+        </p>
       </div>
     </Container>
   );
