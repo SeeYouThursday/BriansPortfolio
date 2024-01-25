@@ -22,6 +22,14 @@ function Project({ projects }) {
                 >
                   Go to Project
                 </Button>
+                <hr></hr>
+                <Button
+                  href={project.github}
+                  variant="success"
+                  className="mt-auto"
+                >
+                  Github Repo
+                </Button>
               </Card.Body>
             </Card>
           </Col>

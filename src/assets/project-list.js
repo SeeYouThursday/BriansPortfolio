@@ -23,7 +23,28 @@ const projectList = [
     github: 'https://github.com/SeeYouThursday/Choose-Your-Own-Adventure',
     url: 'https://createyourownadventure-5cf1f78476c3.herokuapp.com/',
     description: 'PlaceHolder',
-    img: 'PlaceHolder',
+    img: 'https://placehold.co/600x400',
+  },
+  {
+    name: 'PlaceHolder',
+    github: 'https://github.com/SeeYouThursday/Choose-Your-Own-Adventure',
+    url: 'https://createyourownadventure-5cf1f78476c3.herokuapp.com/',
+    description: 'PlaceHolder',
+    img: 'https://placehold.co/600x400',
+  },
+  {
+    name: 'PlaceHolder',
+    github: 'https://github.com/SeeYouThursday/Choose-Your-Own-Adventure',
+    url: 'https://createyourownadventure-5cf1f78476c3.herokuapp.com/',
+    description: 'PlaceHolder',
+    img: 'https://placehold.co/600x400',
+  },
+  {
+    name: 'PlaceHolder',
+    github: 'https://github.com/SeeYouThursday/Choose-Your-Own-Adventure',
+    url: 'https://createyourownadventure-5cf1f78476c3.herokuapp.com/',
+    description: 'PlaceHolder',
+    img: 'https://placehold.co/600x400',
   },
 ];
 
