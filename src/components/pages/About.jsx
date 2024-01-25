@@ -5,7 +5,7 @@ function About() {
     <Container className="d-flex flex-column">
       <Card>
         <Card.Body>
-          <div className="placeCenter">
+          <div>
             <h2>About the Developer</h2>
             <div className="selfie-wrapper">
               <Image
