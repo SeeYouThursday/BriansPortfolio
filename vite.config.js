@@ -9,4 +9,5 @@ export default defineConfig({
     open: true,
   },
   base: '/',
+  build: { rollupOptions: { external: ['react', 'react-dom'] } },
 });
