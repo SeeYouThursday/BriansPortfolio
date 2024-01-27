@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Button, Form, Container, Card } from 'react-bootstrap';
 import { validateEmail } from '../../utils/helpers';
 function ContactMe() {
@@ -9,9 +9,10 @@ function ContactMe() {
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
+
+    // const { target } = e;
+    const inputType = e.target.type;
+    const inputValue = e.target.value;
 
     // Based on the input type, we set the state of either email, username, and password
     if (inputType === 'email') {
@@ -41,12 +42,13 @@ function ContactMe() {
         <Card.Body>
           <Card.Title>Contact Me!</Card.Title>
           <Form validated={validated} onSubmit={handleSubmit}>
-            <Form.Group className="mb-3" controlId="formEnterName">
+            <Form.Group className="mb-3" controlId="name">
               <Form.Label>Name:</Form.Label>
               <Form.Control
                 value={name}
                 required
                 type="text"
+                name="name"
                 placeholder="Enter Name"
                 onChange={handleInputChange}
               />
@@ -56,13 +58,13 @@ function ContactMe() {
             </Form.Group>
             <br></br>
             <Form.Group required controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
+              <Form.Label>Email address:</Form.Label>
               <Form.Control
                 required
                 value={email}
                 type="email"
                 placeholder="Enter email"
-                onChange={(validateEmail, handleInputChange)}
+                onChange={(validateEmail, (e) => setEmail(e.target.value))}
               />
               <Form.Control.Feedback type="invalid">
                 Please enter a valid Email.
