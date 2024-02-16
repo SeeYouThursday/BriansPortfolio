@@ -1,9 +1,9 @@
-.parent {
+/* .parent {
   position: relative;
   color: black;
-}
+} */
 
-.parent::before {
+/* .parent::before {
   content: '';
   position: absolute;
   top: 0;
@@ -14,4 +14,4 @@
   background: white;
   z-index: -1;
   border-radius: 10px;
-}
+} */
