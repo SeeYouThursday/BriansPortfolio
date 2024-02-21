@@ -1,6 +1,7 @@
 import '../../assets/css/about.css';
-import selfie from '../../assets/images/jesuswalk.png';
 import { Container } from 'react-bootstrap';
+import selfie from '../../assets/images/jesuswalk.png';
+import carShowMe from '../../assets/images/carshow.png';
 import MovingText from 'react-moving-text';
 
 function About() {
@@ -9,8 +10,8 @@ function About() {
     color: '#F7FB32',
     display: 'flex',
     flexDirection: 'column',
-    borderRadius: 10,
-    padding: 15,
+    borderRadius: '5%',
+    // padding: 15,
     margin: 5,
     maxHeight: 700,
   };
@@ -28,7 +29,7 @@ function About() {
           flexWrap: 'wrap',
           justifyContent: 'center',
           alignItems: 'center',
-          padding: 10,
+          // padding: 10,
         }}
       >
         {/* //?? title, subtitle, photo //?? */}
@@ -51,10 +52,22 @@ function About() {
           <hr></hr>
           <h3>Developing Full Stack Apps using agile strats.</h3>
           {/*//?? Photo //?? */}
-          <img
+          {/* <img
             height={'50%'}
             width={'50%'}
             src={selfie}
+            alt="picture of Brian Galyen walking down the street with his son"
+            style={{
+              borderRadius: '0 0 0 5%',
+              boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.25)',
+              margin: 0,
+              padding: 0,
+            }}
+          /> */}
+          <img
+            height={'50%'}
+            width={'50%'}
+            src={carShowMe}
             alt="picture of Brian Galyen walking down the street with his son"
             style={{
               borderRadius: '0 0 0 5%',
