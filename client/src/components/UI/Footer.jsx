@@ -7,7 +7,7 @@ import { MDBFooter, MDBContainer, MDBIcon, MDBBtn } from 'mdb-react-ui-kit';
 
 export default function Footer() {
   return (
-    <div style={{ display: 'block', margin: 40 }}>
+    <div style={{ display: 'block', margin: 10 }}>
       <MDBFooter
         className="text-center d-flex"
         style={{ height: '10vh', margin: '10px' }}

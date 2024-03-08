@@ -10,5 +10,33 @@ body {
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  max-height: 80vh;
+}
+
+main {
+  height: 85vh;
+}
+
+header {
+  height: 10vh;
+}
+
+footer {
+  height: 10vh;
+}
+
+/* main scrollbar styling to thin */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #332d2d;
+  opacity: 0.3;
+  /* border-radius: 100px; */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 100px;
 }
