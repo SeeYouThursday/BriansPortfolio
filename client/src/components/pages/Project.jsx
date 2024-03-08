@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/esm/Container';
 import Accordion from 'react-bootstrap/Accordion';
 function Project({ projects }) {
   return (
-    <Container className="mb-4 m-auto">
+    <Container className="m-auto">
       <Row
         xs={1}
         md={2}
@@ -22,42 +22,48 @@ function Project({ projects }) {
         {projects.map((project, idx) => (
           <Col key={idx}>
             <Card
-              className="h-30"
+              bg="light"
+              className="m-auto"
               style={{ width: '300px', height: '500px', display: 'flex' }}
             >
-              <Card.Img variant="top" src={project.img} />
+              <Card.Img variant="top" src={project.img} id={`img-${idx}`} />
               <Card.Body className="d-flex flex-column">
-                <Card.Title>{project.name}</Card.Title>
-                <Accordion flush={true}>
-                  <Accordion.Item eventKey={idx}>
-                    <Accordion.Header>Description</Accordion.Header>
-                    <Accordion.Body
-                      style={{
-                        backgroundColor: 'white',
-                        overflow: 'scroll',
-                        maxHeight: '200px',
-                      }}
-                    >
-                      {project.description}
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </Accordion>
-                <Card.Text className="mb-auto"></Card.Text>
+                <Card.Title className="text-center">{project.name}</Card.Title>
+                <Card.Text className="mb-auto">
+                  <Accordion flush={true} className="m-0 p-0">
+                    <Accordion.Item eventKey={idx}>
+                      <Accordion.Header>Description</Accordion.Header>
+                      <Accordion.Body
+                        style={{
+                          backgroundColor: 'white',
+                          overflow: 'scroll',
+                          maxHeight: '200px',
+                        }}
+                      >
+                        {project.description}
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </Accordion>
+                </Card.Text>
+              </Card.Body>{' '}
+              <Card.Footer>
                 <Button
                   href={project.url}
                   variant="primary"
-                  className="mt-auto"
+                  className="m-auto"
+                  style={{ width: 200 }}
                 >
                   Go to Project
                 </Button>
                 <Button
                   href={project.github}
                   variant="success"
-                  className="mt-auto"
+                  className="m-auto"
+                  style={{ width: 200 }}
                 >
                   Github Repo
                 </Button>
-              </Card.Body>
+              </Card.Footer>
             </Card>
           </Col>
         ))}

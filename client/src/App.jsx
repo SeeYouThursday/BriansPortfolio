@@ -11,8 +11,8 @@ function App() {
       <Header />
       <main id="coverImage">
         <Outlet />
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 }

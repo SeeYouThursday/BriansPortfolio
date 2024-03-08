@@ -40,3 +40,10 @@ body::-webkit-scrollbar-thumb {
   background-color: white;
   border-radius: 100px;
 }
+
+#img-2 {
+  /* min-width: 2%; */
+  /* max-height: 50%; */
+  margin: auto;
+  background-color: #332d2d;
+}
