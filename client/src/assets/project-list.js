@@ -26,27 +26,6 @@ const projectList = [
       'The Weather App allows users to get the current weather information for a specific location. It utilizes the OpenWeather API to fetch weather data and Material-Tailwind for the user interface.',
     img: '/WeatherThisSS.png',
   },
-  {
-    name: 'PlaceHolder',
-    github: 'https://github.com/SeeYouThursday/Choose-Your-Own-Adventure',
-    url: 'https://createyourownadventure-5cf1f78476c3.herokuapp.com/',
-    description: 'PlaceHolder',
-    img: 'https://placehold.co/600x400',
-  },
-  {
-    name: 'PlaceHolder',
-    github: 'https://github.com/SeeYouThursday/Choose-Your-Own-Adventure',
-    url: 'https://createyourownadventure-5cf1f78476c3.herokuapp.com/',
-    description: 'PlaceHolder',
-    img: 'https://placehold.co/600x400',
-  },
-  {
-    name: 'PlaceHolder',
-    github: 'https://github.com/SeeYouThursday/Choose-Your-Own-Adventure',
-    url: 'https://createyourownadventure-5cf1f78476c3.herokuapp.com/',
-    description: 'PlaceHolder',
-    img: 'https://placehold.co/600x400',
-  },
 ];
 
 export default projectList;

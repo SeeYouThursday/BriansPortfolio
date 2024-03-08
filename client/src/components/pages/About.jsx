@@ -1,7 +1,6 @@
-import '../../assets/css/about.css';
 import { Container } from 'react-bootstrap';
 import selfie from '../../assets/images/jesuswalk.png';
-import carShowMe from '../../assets/images/carshow.png';
+// import carShowMe from '../../assets/images/carshow.png';
 import MovingText from 'react-moving-text';
 
 function About() {
@@ -10,10 +9,12 @@ function About() {
     color: '#F7FB32',
     display: 'flex',
     flexDirection: 'column',
+    flexWrap: 'no-wrap',
     borderRadius: '5%',
     // padding: 15,
     margin: 5,
     maxHeight: 700,
+    maxWidth: '90%',
   };
 
   return (
@@ -21,7 +22,6 @@ function About() {
     <Container className="parent">
       {/* //?? Overall container div //?? */}
       <div
-        className=""
         style={{
           // backgroundColor: 'gray',
           display: 'flex',
@@ -45,28 +45,48 @@ function About() {
             fluid
           >
             {/* //?? Title/Subtitle //?? */}
-            <h2 style={{ 'font-weight': 300, color: '#F7FB32' }}>
+            <h2
+              style={{ fontWeight: 'bolder', color: '#F7FB32' }}
+              className="mx-5 mt-2"
+            >
               About the Developer
             </h2>
           </MovingText>{' '}
           <hr></hr>
-          <h3>Developing Full Stack Apps using agile strats.</h3>
-          {/*//?? Photo //?? */}
-          {/* <img
-            height={'50%'}
-            width={'50%'}
-            src={selfie}
-            alt="picture of Brian Galyen walking down the street with his son"
+          {/*//?? Photo and Long Description //?? */}
+          <div
             style={{
-              borderRadius: '0 0 0 5%',
-              boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.25)',
-              margin: 0,
-              padding: 0,
+              display: 'flex',
+              justifyContent: 'space-between',
             }}
-          /> */}
-          <img
-            height={'50%'}
-            width={'50%'}
+          >
+            <img
+              height={'35%'}
+              width={'35%'}
+              src={selfie}
+              alt="picture of Brian Galyen walking down the street with his son"
+              style={{
+                borderRadius: '0 0 0 5%',
+                boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.25)',
+                margin: 0,
+                padding: 0,
+                maxHeight: '500px',
+              }}
+            />{' '}
+            <div className="mx-5">
+              <h5 className="m-5" style={{ fontWeight: 'bold' }}>
+                Developing Full Stack Apps using agile strats.
+              </h5>
+              <h6 className="m-5">
+                As a recently retired educator, I have my calling to be a Full
+                Stack Developer. My previous skills have effectively translated
+                into the Agile Development environment.
+              </h6>
+            </div>
+          </div>
+          {/* <img
+            // height={'50%'}
+            // width={'50%'}
             src={carShowMe}
             alt="picture of Brian Galyen walking down the street with his son"
             style={{
@@ -74,18 +94,13 @@ function About() {
               boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.25)',
               margin: 0,
               padding: 0,
+              maxHeight: '30%',
+              maxWidth: '30%',
+              objectFit: 'contain',
             }}
-          />
+          /> */}
         </div>
         {/* //?? Long description //?? */}
-        <div style={style}>
-          {' '}
-          <p>
-            As a recently retired educator, I have my calling to be a Full Stack
-            Developer. My previous skills have effectively translated into the
-            Agile Development environment.
-          </p>
-        </div>
       </div>
     </Container>
   );
