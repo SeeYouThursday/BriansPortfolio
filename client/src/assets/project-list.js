@@ -21,10 +21,18 @@ const projectList = [
   {
     name: 'Weather This',
     github: 'https://github.com/SeeYouThursday/Weather-This',
-    url: 'https://createyourownadventure-5cf1f78476c3.herokuapp.com/',
+    url: 'https://reactweatherdash-5d1448c64bce.herokuapp.com/',
     description:
       'The Weather App allows users to get the current weather information for a specific location. It utilizes the OpenWeather API to fetch weather data and Material-Tailwind for the user interface.',
-    img: '/fullWeatherThis.png',
+    img: '/screenshots/fullWeatherThis.png',
+  },
+  {
+    name: "Not Your Mom's Tech Blog",
+    github: 'https://github.com/SeeYouThursday/Not-Your-Moms-Tech-Blog',
+    url: 'https://not-your-moms-tech-blog-5e4e2d95a074.herokuapp.com/',
+    description:
+      'The Weather App allows users to get the current weather information for a specific location. It utilizes the OpenWeather API to fetch weather data and Material-Tailwind for the user interface.',
+    img: '/screenshots/tech-blog.png',
   },
 ];
 

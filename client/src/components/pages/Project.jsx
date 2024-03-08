@@ -52,6 +52,7 @@ function Project({ projects }) {
                   variant="primary"
                   className="m-auto"
                   style={{ width: 200 }}
+                  target="_blank"
                 >
                   Go to Project
                 </Button>
@@ -60,6 +61,7 @@ function Project({ projects }) {
                   variant="success"
                   className="m-auto"
                   style={{ width: 200 }}
+                  target="_blank"
                 >
                   Github Repo
                 </Button>
