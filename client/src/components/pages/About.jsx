@@ -78,9 +78,9 @@ function About() {
               </h5>
               {/* //?? Description //?? */}
               <h6 className="m-5">
-                As a recently retired educator, I have my calling to be a Full
-                Stack Developer. My previous skills have effectively translated
-                into the Agile Development environment.
+                As a recently retired educator, I have my found calling to be a
+                Full Stack Developer. My previous skills have effectively
+                translated into the Agile Development environment.
               </h6>
             </div>
           </div>

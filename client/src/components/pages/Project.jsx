@@ -12,6 +12,7 @@ function Project({ projects }) {
         xs={1}
         md={2}
         lg={3}
+        xxl={4}
         className="g-5 m-auto"
         style={{
           display: 'flex',
@@ -45,7 +46,7 @@ function Project({ projects }) {
                     </Accordion.Item>
                   </Accordion>
                 </Card.Text>
-              </Card.Body>{' '}
+              </Card.Body>
               <Card.Footer>
                 <Button
                   href={project.url}
