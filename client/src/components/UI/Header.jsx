@@ -13,72 +13,90 @@ function Header() {
   }, [activeTab]);
 
   const style = { color: '#ffffff' };
+
   return (
-    <Navbar
-      collapseOnSelect
-      expand="lg"
-      className="bg-body-tertiary mb-4 d-flex flex-row justify-content-between"
-      // fixed="top"
-      bg="dark"
-      data-bs-theme="dark"
-      variant="tabs"
-    >
-      {/*//?? Logo and Name //?? */}
-      <div className="d-flex flex-row">
-        <Navbar.Brand href="/" id="navbar" style={{ marginLeft: 10 }}>
-          <img
-            alt="SeeYouThursday GitHub Logo"
-            src={logo}
-            width="30"
-            height="30"
-            className="d-inline-block align-top mb-2"
-          />{' '}
-        </Navbar.Brand>
-        <h1 style={style}>Brian Galyen</h1>
-      </div>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" style={style} />
-      <Navbar.Collapse id="responsive-navbar-nav" style={style}>
-        {/* //?? Nav Links //?? */}
-        <Nav variant="underline" activeKey={activeTab}>
-          <Nav.Link
-            style={style}
-            as={Link}
-            to="/"
-            eventKey="/"
-            onClick={() => setActiveTab('/')}
+    <>
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        className="bg-body-tertiary mb-4 navbar"
+        // fixed="top"
+        bg="dark"
+        data-bs-theme="dark"
+        variant="tabs"
+        role="navigation"
+        id="spaceOut"
+      >
+        {/* //?? LOGO & NAME //?? */}
+        <div className="d-flex flex-row m-auto">
+          <Navbar.Brand
+            href="/"
+            id="navbar"
+            style={{ marginLeft: 10, marginRight: 3 }}
           >
-            About Me
-          </Nav.Link>
-          <Nav.Link
-            style={style}
-            as={Link}
-            to="/Portfolio"
-            eventKey="/Portfolio"
-            onClick={() => setActiveTab('/Portfolio')}
+            <img
+              alt="SeeYouThursday GitHub Logo"
+              src={logo}
+              width="30"
+              height="30"
+              className="d-inline-block align-top mb-2"
+            />{' '}
+          </Navbar.Brand>
+          <h1 style={style}>Brian Galyen</h1>
+        </div>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="m-4" />
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          style={style}
+          className="m-4"
+        >
+          {/* //?? Nav Links //?? */}
+          {/* <Nav className="me-auto"></Nav> */}
+          <Nav
+            variant="underline"
+            activeKey={activeTab}
+            className="ms-auto pe-4"
           >
-            Portfolio
-          </Nav.Link>
-          <Nav.Link
-            style={style}
-            as={Link}
-            to="/Contact"
-            eventKey="/Contact"
-            onClick={() => setActiveTab('/Contact')}
-          >
-            Contact Me
-          </Nav.Link>
-          <Nav.Link
-            style={style}
-            as={Link}
-            to="/Resume"
-            eventKey="Resume"
-            onClick={() => setActiveTab('/Resume')}
-          >
-            Resume
-          </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+            <Nav.Link
+              style={style}
+              as={Link}
+              to="/"
+              eventKey="/"
+              onClick={() => setActiveTab('/')}
+            >
+              About Me
+            </Nav.Link>
+            <Nav.Link
+              style={style}
+              as={Link}
+              to="/Portfolio"
+              eventKey="/Portfolio"
+              onClick={() => setActiveTab('/Portfolio')}
+            >
+              Portfolio
+            </Nav.Link>
+            <Nav.Link
+              style={style}
+              as={Link}
+              to="/Contact"
+              eventKey="/Contact"
+              onClick={() => setActiveTab('/Contact')}
+            >
+              Contact Me
+            </Nav.Link>
+            <Nav.Link
+              style={style}
+              as={Link}
+              to="/Resume"
+              eventKey="Resume"
+              onClick={() => setActiveTab('/Resume')}
+            >
+              Resume
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </>
   );
 }
 

@@ -31,7 +31,7 @@ function Project({ projects }) {
               <Card.Body className="d-flex flex-column">
                 <Card.Title className="text-center">{project.name}</Card.Title>
                 <Card.Text className="mb-auto">
-                  <Accordion flush={true} className="m-0 p-0">
+                  <Accordion flush={true} className="m-0 p-0 ">
                     <Accordion.Item eventKey={idx}>
                       <Accordion.Header>Description</Accordion.Header>
                       <Accordion.Body
@@ -39,7 +39,9 @@ function Project({ projects }) {
                           backgroundColor: 'white',
                           overflow: 'scroll',
                           maxHeight: '200px',
+                          'overflow-x': 'auto'
                         }}
+                        className="accordian"
                       >
                         {project.description}
                       </Accordion.Body>
